@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Recipe page</title>
+
+  <style>
+    body {
+  background-color: hsl(30, 54%, 90%); /* Stone 100 */
+  font-family: 'Young Serif', serif;
+  font-size: 16px; /* Body copy */
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+  margin: 0;
+}
+
+.Recipe {
+  background-color: hsl(0, 0%, 100%); /* White */
+  border-radius: 20px;
+  width: 50%; /* Desktop width */
+  max-width: 800px; /* Maximum width for larger screens */
+  margin: 0 auto;
+  padding: 20px; /* Increased padding */
+}
+
+.Recipe img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.Preparation {
+  margin: 2% 0 0 5%; 
+  background-color: hsl(30, 18%, 87%);
+  padding: 10px; 
+  border-radius: 10px;
+  border-bottom: 1px solid hsl(24, 5%, 18%); 
+}
+
+li {
+  margin: 5px 0; 
+}
+
+h2 {
+  color: hsl(14, 45%, 36%); 
+  font-weight: 600;
+}
+
+h3 {
+  color: #854632; 
+}
+
+ul {
+  color: #5f574e; 
+}
+
+ol {
+  margin: 5px 0;
+}
+
+.colored-list li {
+  color: #5f574e;
+}
+
+.colored-list li::marker {
+  color: #7b284f; 
+  font-weight: bold; 
+}
+
+.nutrition p {
+  margin-top: 1rem;
+}
+
+.nutrition ul li {
+  display: flex;
+  justify-content:space-around; 
+  border-bottom: 1px solid #e4ded8;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: #3e52a3; 
+}
+span{
+  color: #7b284f;
+}
+
+
+@media (max-width: 375px) {
+  .Recipe {
+    width: 90%; 
+  }
+}
+
+    
+      </style>
+</head>
+<body>
+<div class="Recipe">
+  <img src="/recipe-page-main/assets/images/image-omelette.jpeg" alt="Omelette">
+  <h1 class="main-title">  Simple Omelette Recipe </h1>
+  <p class="main-paragraph ">Simple Omelette Recipe An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+  <div class="Preparation">
+    <h3> Preparation time</h3>
+  <ul>
+    <li><strong>Total:</strong> Approximately 10 minutes</li>
+    <li><strong>Preparation:</strong> 5 minutes</li>
+    <li><strong>Cooking:</strong> 5 minutes</li>
+</ul>
+  </div>
+  <div class="Ingredients"><h2>Ingredients</h2>
+    <ul>
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul></div>
+  <hr/>
+  <h2>Instructions</h2>
+  <ol class="colored-list">
+      <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+      <li><strong>Heat the pan:</strong>  Place a non-stick frying pan over medium heat and add butter or oil.</li>
+      <li><strong>Cook the omelette:</strong>  Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+      <li><strong>Add fillings (optional):</strong>  When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+      <li><strong>Fold and serve: </strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      <li><strong>Enjoy :</strong> Serve hot, with additional salt and pepper if needed.</li>
+    </ol>
+    <div class="nutrition">
+      <h2>Nutrition</h2>
+
+      <p>
+        The table below shows nutritional values per serving without the
+        additional fillings.
+      </p>
+
+      <article>
+        <ul style="list-style-type: none; padding: 0">
+          <li>Calories <span>277kcal</span></li>
+
+          <li>Carbs <span>0g</span></li>
+
+          <li>Protein <span>20g</span></li>
+
+          <li>Fat <span>22g</span></li>
+        </ul>
+      </article>
+    </div>
+</div>
+
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/m-maher97">mMaher</a>.
+  </div>
+</body>
+</html>
